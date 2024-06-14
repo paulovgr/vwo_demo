@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import VWO_Insights
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        VWO.enableLog()
+        VWO.configure(accountId: "876295", appId: "e32fb1c16258b9e3668b78a60eddf590", userId: nil ) { result in
+            switch result {
+            case .success(_):
+                    VWO.startSessionRecording()
+            default:
+                break
+            }
+        }     
         return true
     }
 

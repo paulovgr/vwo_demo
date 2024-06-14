@@ -13,6 +13,7 @@
 		19EA86332C1CD5C90036F085 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 19EA86322C1CD5C90036F085 /* Base */; };
 		19EA86352C1CD5CA0036F085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EA86342C1CD5CA0036F085 /* Assets.xcassets */; };
 		19EA86382C1CD5CA0036F085 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 19EA86372C1CD5CA0036F085 /* Base */; };
+		19EA86412C1CD63B0036F085 /* VWO_Insights in Frameworks */ = {isa = PBXBuildFile; productRef = 19EA86402C1CD63B0036F085 /* VWO_Insights */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19EA86412C1CD63B0036F085 /* VWO_Insights in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = vwo_demo;
+			packageProductDependencies = (
+				19EA86402C1CD63B0036F085 /* VWO_Insights */,
+			);
 			productName = vwo_demo;
 			productReference = 19EA86282C1CD5C90036F085 /* vwo_demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 19EA861F2C1CD5C90036F085;
+			packageReferences = (
+				19EA863F2C1CD63B0036F085 /* XCRemoteSwiftPackageReference "ios-mobile-insights-artifacts" */,
+			);
 			productRefGroup = 19EA86292C1CD5C90036F085 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19EA863F2C1CD63B0036F085 /* XCRemoteSwiftPackageReference "ios-mobile-insights-artifacts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wingify/ios-mobile-insights-artifacts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19EA86402C1CD63B0036F085 /* VWO_Insights */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19EA863F2C1CD63B0036F085 /* XCRemoteSwiftPackageReference "ios-mobile-insights-artifacts" */;
+			productName = VWO_Insights;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19EA86202C1CD5C90036F085 /* Project object */;
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "d73448e665ad86fbcd367b5e05b29aa2dbcf8b70f2da6022a8f7da98ab51f33f",
+  "pins" : [
+    {
+      "identity" : "ios-mobile-insights-artifacts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wingify/ios-mobile-insights-artifacts.git",
+      "state" : {
+        "revision" : "e2d140575155a0c5a9188c44b14dbed5417cd45e",
+        "version" : "0.4.11"
+      }
+    }
+  ],
+  "version" : 3
+}
